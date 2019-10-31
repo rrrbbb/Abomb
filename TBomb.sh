@@ -44,23 +44,23 @@ if [ $ch -eq 1 ];then
 clear
 echo -e "\e[1;32m"
 rm *.xxx >/dev/null 2>&1
-python3 bomber.py
+python3 bomber2.py
 rm *.xxx >/dev/null 2>&1
 exit 0
 elif [ $ch -eq 2 ];then
 clear
 echo -e "\e[1;32m"
 echo 'Call Bomb By SpeedX'> call.xxx
-python3 bomber.py call
+python3 bomber2.py call
 rm *.xxx >/dev/null 2>&1
 exit 0
 elif [ $ch -eq 3 ];then
 clear
 apt install git -y
 echo -e "\e[1;34m Downloading Latest Files..."
-git clone https://github.com/TheSpeedX/TBomb
-if [[ -s TBomb/TBomb.sh ]];then
-cd TBomb
+git clone https://github.com/Ritikbansal/ABomb/
+if [[ -s ABomb/TBomb.sh ]];then
+cd ABomb
 cp -r -f * .. > temp
 cd ..
 rm -rf  TBomb >> temp
