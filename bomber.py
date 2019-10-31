@@ -538,7 +538,7 @@ if type == 1:
     if nm > 15:
         print("\t\tYou Have Entered " + str(nm) +
               ".\n\tNormalizing Value To 15")
-        nm = 15
+        nm = 100
     dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
@@ -551,7 +551,7 @@ elif type == 0:
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
 if cc == "91":
-    maxlim = 500
+    maxlim = 50000
 else:
     maxlim = 100
 if nm > maxlim:
