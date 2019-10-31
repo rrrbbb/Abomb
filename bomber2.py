@@ -244,7 +244,7 @@ def banner():
 
 
 # Counts Number Of SMS in Infinite Mode
-count_inf = 0
+count_inf = 50000
 
 
 def infinite(pn, dl, ch, max):
@@ -439,8 +439,8 @@ def start(target, counter, delay, ch, cc):
         print("             Failed Requests         : ", failed)
         print("==================================================================")
         print("              Use this for fun, not for revenge !!                ")
-        print("              This Bomber Was Created By SpeedX !!                ")
-        print("==================================================================")
+        print("              This Bomber Was Created By ritik !!                ")
+        print("=================================================================")
 
         try:
             result = getapi(target, api, cc)
