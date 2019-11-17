@@ -231,20 +231,20 @@ country_codes = {
 
 def banner():
     cprint("""                                                  
-      ███████  ██████                 ██             
-   ▒▒▒██▒▒▒ █  ██▒▒▒██                ██             
-      ██     █  ██   ██  ████  ██   ██ ██             
-      ███████  ██████▒ ██▒▒██ ███ ███ █████          
-      ██ █      ██▒▒▒██ ██  ██ ██▒█▒██ ██▒▒██         
-      ██  ██    ██   ██ ██  ██ ██ ▒ ██ ██  ██         
-      ██    ██  ██████▒ ▒████▒ ██   ██ █████▒         
-      ▒▒      █ ▒▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒          
-                                         """, 'blue')
+   ████████ ██████                 ██             
+   ▒▒▒██▒▒▒ ██▒▒▒██                ██             
+      ██    ██   ██  ████  ██   ██ ██             
+      ██    ██████▒ ██▒▒██ ███ ███ █████          
+      ██    ██▒▒▒██ ██  ██ ██▒█▒██ ██▒▒██         
+      ██    ██   ██ ██  ██ ██ ▒ ██ ██  ██         
+      ██    ██████▒ ▒████▒ ██   ██ █████▒         
+      ▒▒    ▒▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒          
+                                         """, 'green')
     print()
 
 
 # Counts Number Of SMS in Infinite Mode
-count_inf = 50000
+count_inf = 0
 
 
 def infinite(pn, dl, ch, max):
@@ -267,7 +267,7 @@ def infinite(pn, dl, ch, max):
         # os.system('echo SpeedX >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
-            exit()
+            pass:
 
 
 def checkinternet():
@@ -439,8 +439,8 @@ def start(target, counter, delay, ch, cc):
         print("             Failed Requests         : ", failed)
         print("==================================================================")
         print("              Use this for fun, not for revenge !!                ")
-        print("              This Bomber Was Created By ritik !!                ")
-        print("=================================================================")
+        print("              This Bomber Was Created By SpeedX !!                ")
+        print("==================================================================")
 
         try:
             result = getapi(target, api, cc)
@@ -538,7 +538,7 @@ if type == 1:
     if nm > 15:
         print("\t\tYou Have Entered " + str(nm) +
               ".\n\tNormalizing Value To 15")
-        nm = 100
+        nm = 15
     dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
@@ -554,9 +554,7 @@ if cc == "91":
     maxlim = 50000
 else:
     maxlim = 100
-if nm > maxlim:
-    print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
-          str(maxlim) + ' SMS At Once...\n\n')
+
     print('Number Of SMS Has been Set To ' + str(maxlim))
     nm = maxlim
 if not cc.strip() == "91":
@@ -607,7 +605,7 @@ if nm == 0:
     print("             Delay               : ", dl)
     print("==================================================================")
     print("              Use this for fun, not for revenge !!                ")
-    print("              This Bomber Was Created By ritik. !!                ")
+    print("              This Bomber Was Created By SpeedX !!                ")
     print("==================================================================")
     input('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')
     os.system('rm *.xxx* > /dev/null 2>&1')
