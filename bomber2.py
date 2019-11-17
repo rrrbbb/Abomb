@@ -620,13 +620,8 @@ if nm == 0:
         ci += 1
         l = count_inf
         print("	   Total Number of Requests Sent : ", l)
-        if int(l) > maxlim:
-            print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
-                  str(maxlim) + ' SMS At Once...\n\n')
-            input('Press Enter To Exit...')
-            os.system('rm *xxx* > /dev/null 2>&1')
-            banner()
-            exit()
+        
+       
         time.sleep(1)
         if ci % 3 == 0:
             checkinternet()
