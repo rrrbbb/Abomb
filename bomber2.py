@@ -263,7 +263,7 @@ def infinite(pn, dl, ch, max):
                 ch.remove(api)
             continue
         os.system('rm proc.xxx >/dev/null 2>&1')
-        count_inf += 1
+        count_inf += 0
         # os.system('echo SpeedX >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
