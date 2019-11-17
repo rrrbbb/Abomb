@@ -246,7 +246,7 @@ def banner():
 # Counts Number Of SMS in Infinite Mode
 count_inf = 0
 
-
+temp69=0
 def infinite(pn, dl, ch, max):
     global count_inf
     while True:
@@ -263,6 +263,7 @@ def infinite(pn, dl, ch, max):
                 ch.remove(api)
             continue
         os.system('rm proc.xxx >/dev/null 2>&1')
+        temp69=count_inf
         count_inf += 0
         # os.system('echo SpeedX >> count.xxx')
         time.sleep(float(dl))
@@ -618,7 +619,7 @@ if nm == 0:
     ci = 0
     while True:
         ci += 1
-        l = count_inf
+        l = temp69
         print("	   Total Number of Requests Sent : ", l)
         
        
