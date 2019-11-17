@@ -267,7 +267,7 @@ def infinite(pn, dl, ch, max):
         # os.system('echo SpeedX >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
-            pass:
+            pass
 
 
 def checkinternet():
